@@ -1,12 +1,12 @@
 #!/bin/bash
 
-USER_NAME=$(whoami)
-HOSTNAME=$(hostname)
-DATE_TIME=$(date)
+user_name=$(whoami)
+host_name=$(hostname)
+date_time=$(date)
 
-echo -e "Welcome, $USER_NAME 👋"
-echo -e "Host: $HOSTNAME"
-echo -e "Date & Time: $DATE_TIME"
+echo -e "Welcome, $user_name 👋"
+echo -e "Host: $host_name"
+echo -e "Date & Time: $date_time"
 echo
 
 echo -e "System Uptime:"
@@ -14,7 +14,7 @@ uptime
 echo
 
 echo -e "Last Logged-in Users:"
-last -a | head -n 5
+last | head -n 5
 echo
 
 echo -e "Disk Usage:"
